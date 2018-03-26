@@ -7,8 +7,8 @@ class Student
   end
 
   def self.new_from_db(row)
-    Student.new(row[1], row[2])
-    self.id = row[0]
+    student = Student.new(row[1], row[2])
+    student.id = row[0]
   end
 
   def self.all
